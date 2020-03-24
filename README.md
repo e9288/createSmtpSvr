@@ -92,6 +92,8 @@ postfix, dovecont, squirrelmail 을 이용한 smtp 서버 구현
   $ telnet example.com smtp
   $ telnet example.com 587
 
+------------------ postfix (mail Sender) 설정끝 --------------------
+
 10. dovecot 설치
   $ sudo apt-get install dovecot-imapd dovecot-pop3d
   
