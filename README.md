@@ -55,7 +55,7 @@ postfix, dovecont, squirrelmail 을 이용한 smtp 서버 구현
   $ sudo postconf -e 'smtpd_tls_key_file = /etc/ssl/private/server.key'
   $ sudo postconf -e 'smtpd_tls_cert_file = /etc/ssl/certs/server.crt'
   
-5. smtp 465, 587 허용을 위해 /etc/postfix/master.cf 파일에서 아래 내용을 주석 처리한다.
+5. smtp 465, 587 허용을 위해 /etc/postfix/master.cf 파일에서 아래 내용의 주석을 
     -o syslog_name=postfix/submission
     -o smtpd_tls_security_level=encrypt
     -o smtpd_sasl_auth_enable=yes
